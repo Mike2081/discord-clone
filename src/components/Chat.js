@@ -1,11 +1,29 @@
-import React from 'react'
-import Logout from './Logout'
+import React, {useState, useEffect} from 'react'
+import { dataBase } from '../firebase'
+import LogOut from './LogOut'
+import SendText from './SendText'
+
 
 function Chat() {
+
+    const [msgs, setMsgs] = useState([])
+
+    useEffect(() => {
+        dataBase.collection('msgs').orderBy('createdAt').limit(15).onSnapshot( snapshot => {
+            setMsgs(snapshot.docs.map(doc => doc.data()))
+        })
+    }, [])
+
     return (
         <div>
-            <Logout/>
-            viewing test chat messaging
+            <LogOut/>
+            {msgs.map(({id, text, photoURL}) => (
+                <div key={id}>
+                    <img src ={photoURL} alt='profile pic' />
+                    <p>{text}</p>
+                </div>    
+            ))}
+            <SendText />
         </div>
     )
 }

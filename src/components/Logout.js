@@ -1,7 +1,7 @@
 import React from 'react'
 import { auth } from '../firebase.js'
 
-function Logout() {
+function LogOut() {
     return (
         <div>
             <button onClick = {() => auth.signOut()} >Log out</button>
@@ -9,4 +9,4 @@ function Logout() {
     )
 }
 
-export default Logout
+export default LogOut
