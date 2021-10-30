@@ -1,3 +1,5 @@
 {
-    "discord.lowerDetailsIdling": "hello there :]"
+    "discord.lowerDetailsIdling": "hello there :]",
+    "discord.idleTimeout": 28800,
+    "discord.removeRemoteRepository": true
 }
