@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+:root {
+  --primary-color: #11173d;
+  --secondary-color: #191f4b;
+  --accent: #7a7d92;
+
+  --button-color: #f23e79;
+  --montserrat: "Montserrat", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-color);
+  text-align: center;
+  font-family: var(--montserrat);
+  color: var(--accent);
+}
+.sign-in {
+  padding-bottom: 6.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.sign-in__button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--accent);
+  font-size: 1.25rem;
+}
+
+footer {
+  padding: 1.25rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--secondary-color);
+}
