@@ -1,0 +1,10 @@
+.Nav {
+  border-bottom: solid;
+  border-bottom-color: darkgray;
+  border-width: thin;
+}
+
+.Nav__title {
+  font-size: 2em;
+}
+/*# sourceMappingURL=NavBar.css.map */

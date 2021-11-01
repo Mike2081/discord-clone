@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import { dataBase } from "../firebase";
+import { dataBase } from "./firebase";
 import LogOut from "./LogOut";
+import NavBar from "./NavBar";
 import SendText from "./SendText";
 
 function Chat() {
@@ -19,6 +20,7 @@ function Chat() {
 
   return (
     <div>
+      <NavBar />
       <LogOut />
       {msgs.map(({ id, text, photoURL }) => (
         <div key={id}>

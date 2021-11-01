@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { auth } from "../firebase";
-import { dataBase } from "../firebase";
+import { auth } from "./firebase";
+import { dataBase } from "./firebase";
 import firebase from "firebase/compat/app";
 
 function SendText({scroll}) {
