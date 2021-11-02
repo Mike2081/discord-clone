@@ -1,34 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
-:root {
-  --primary-color: #11173d;
-  --secondary-color: #191f4b;
-  --accent: #7a7d92;
-
-  --button-color: #f23e79;
-  --montserrat: "Montserrat", sans-serif;
-}
-
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--primary-color);
+  background-color: #11173d;
   text-align: center;
-  font-family: var(--montserrat);
-  color: var(--accent);
+  font-family: "Montserrat", sans-serif;
+  color: #7a7d92;
 }
+
 .sign-in {
   padding-bottom: 6.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100vh;
 }
 
@@ -37,8 +38,15 @@ body {
   background-color: transparent;
   cursor: pointer;
   text-decoration: underline;
-  color: var(--accent);
+  color: #7a7d92;
   font-size: 1.25rem;
+  opacity: 1;
+  -webkit-transition: opacity 1s ease 0s;
+  transition: opacity 1s ease 0s;
+}
+
+.sign-in__button:hover {
+  opacity: 0.4;
 }
 
 footer {
@@ -47,5 +55,6 @@ footer {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: var(--secondary-color);
+  background-color: #191f4b;
 }
+/*# sourceMappingURL=index.css.map */
