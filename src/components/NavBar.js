@@ -7,9 +7,6 @@ function NavBar() {
             <div class='Nav__title'>
                 Welcome to the Discord-clone community chat
             </div>
-            <div>
-                example number 3213 messages
-            </div>
         </div>
     )
 }
