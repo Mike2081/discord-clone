@@ -8,12 +8,13 @@ function SendText({scroll}) {
 
   async function sendMsg(e) {
     e.preventDefault();
-    const { uid, photoURL } = auth.currentUser;
+    const { uid, photoURL, displayName } = auth.currentUser;
 
     await dataBase.collection("msgs").add({
       text: text,
       photoURL,
       uid,
+      displayName,
       createdAt: firebase.firestore.FieldValue.serverTimestamp(),
     });
     setText("");

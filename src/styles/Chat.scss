@@ -1,0 +1,23 @@
+.chat {
+  &__dummyDiv {
+    padding-top: 5em;
+  }
+
+  &__uProfile {
+    display: flex;
+    margin: 13px 0px;
+    &__bubblePic {
+      width: 4em;
+      height: 4em;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center right;
+    }
+    &__textBox {
+      &__name {
+        font-weight: 700;
+        color: white;
+      }
+    }
+  }
+}

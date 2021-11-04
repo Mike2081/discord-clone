@@ -1,0 +1,26 @@
+.chat__dummyDiv {
+  padding-top: 5em;
+}
+
+.chat__uProfile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 13px 0px;
+}
+
+.chat__uProfile__bubblePic {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center right;
+     object-position: center right;
+}
+
+.chat__uProfile__textBox__name {
+  font-weight: 700;
+  color: white;
+}
+/*# sourceMappingURL=chat.css.map */
