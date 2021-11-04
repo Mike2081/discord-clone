@@ -3,6 +3,8 @@
   border-bottom: solid;
   border-bottom-color: darkgray;
   border-width: thin;
+  position: fixed;
+  background-color: #11173d;
 }
 
 .Nav__title {
