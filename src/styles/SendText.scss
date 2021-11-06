@@ -1,0 +1,11 @@
+.TextBar {
+  position: fixed;
+  bottom: -18px;
+  height: 90px;
+  &__InputBar {
+    padding: 20px;
+    border-top: solid;
+    border-width: thin;
+    background-color: #11173d;
+  }
+}

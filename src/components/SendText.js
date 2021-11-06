@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { auth } from "./firebase";
 import { dataBase } from "./firebase";
 import firebase from "firebase/compat/app";
+import '../styles/SendText.css';
 
 function SendText({scroll}) {
   const [text, setText] = useState("");
@@ -21,8 +22,8 @@ function SendText({scroll}) {
     scroll.current.scrollIntoView({ behavior: 'smooth'})
   }
   return (
-    <div>
-      <form onSubmit={sendMsg}>
+    <div className='TextBar'>
+      <form className='TextBar__InputBar' onSubmit={sendMsg}>
         <input
           value={text}
           onChange={(e) => setText(e.target.value)}

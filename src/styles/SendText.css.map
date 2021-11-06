@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,CAAC;EACP,QAAQ,EAAE,KAAK;EACf,MAAM,EAAE,KAAK;EACb,MAAM,EAAE,IAAI;CAOb;;AANE,AAAD,kBAAW,CAAC;EACV,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,KAAK;EACjB,YAAY,EAAE,IAAI;EAClB,gBAAgB,EAAE,OAAO;CAC1B",
+    "sources": [
+        "SendText.scss"
+    ],
+    "names": [],
+    "file": "SendText.css"
+}
