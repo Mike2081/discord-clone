@@ -28,7 +28,7 @@ function Chat() {
           <img className='chat__uProfile__bubblePic' src={photoURL} alt="profile pic" />
           <div className='chat__uProfile__textBox'>
             <div className='chat__uProfile__textBox__name'>{displayName}</div>
-            <div>{text}</div>
+            <div className='chat__uProfile__textBox__text'>{text}</div>
           </div>
         </div>
       ))}

@@ -10,8 +10,9 @@
 }
 
 .chat__uProfile__bubblePic {
-  width: 4em;
-  height: 4em;
+  width: 3em;
+  height: 3em;
+  margin: 0em 1em;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -22,5 +23,10 @@
 .chat__uProfile__textBox__name {
   font-weight: 700;
   color: white;
+}
+
+.chat__uProfile__textBox__text {
+  color: white;
+  font-weight: 100;
 }
 /*# sourceMappingURL=chat.css.map */

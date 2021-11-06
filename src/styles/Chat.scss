@@ -7,8 +7,9 @@
     display: flex;
     margin: 13px 0px;
     &__bubblePic {
-      width: 4em;
-      height: 4em;
+      width: 3em;
+      height: 3em;
+      margin: 0em 1em;
       border-radius: 50%;
       object-fit: cover;
       object-position: center right;
@@ -17,6 +18,10 @@
       &__name {
         font-weight: 700;
         color: white;
+      }
+      &__text {
+        color: white;
+        font-weight: 100;
       }
     }
   }
