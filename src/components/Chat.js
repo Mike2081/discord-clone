@@ -3,6 +3,7 @@ import { dataBase } from "./firebase";
 import NavBar from "./NavBar";
 import SendText from "./SendText";
 import '../styles/Chat.css';
+import SideBar from "./SideBar";
 
 
 function Chat() {
@@ -21,19 +22,24 @@ function Chat() {
 
   return (
     <div className ='chat'>
-      <NavBar />
-      <div className='chat__TopDummyDiv'></div>
-      {msgs.map(({ id, text, photoURL, displayName }) => (
-        <div className='chat__uProfile' key={id}>
-          <img className='chat__uProfile__bubblePic' src={photoURL} alt="profile pic" />
-          <div className='chat__uProfile__textBox'>
-            <div className='chat__uProfile__textBox__name'>{displayName}</div>
-            <div className='chat__uProfile__textBox__text'>{text}</div>
-          </div>
+      <div className='chat__container'>
+        <SideBar />
+        <div>
+          <NavBar />
+          <div className='chat__container__TopDummyDiv'></div>
+          {msgs.map(({ id, text, photoURL, displayName }) => (
+            <div className='chat__container__uProfile' key={id}>
+              <img className='chat__container__uProfile__bubblePic' src={photoURL} alt="profile pic" />
+              <div className='chat__container__uProfile__textBox'>
+                <div className='chat__container__uProfile__textBox__name'>{displayName}</div>
+                <div className='chat__container__uProfile__textBox__text'>{text}</div>
+              </div>
+            </div>
+          ))}
+          <SendText scroll={scroll} />
+          <div className='chat__container__BotDummyDiv' ref={scroll}></div>
         </div>
-      ))}
-      <SendText scroll={scroll} />
-      <div className='chat__BotDummyDiv' ref={scroll}>dummy text</div>
+      </div>            
     </div>
   );
 }

@@ -1,15 +1,21 @@
-.chat__TopDummyDiv {
-  padding-top: 4em;
+.chat__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.chat__uProfile {
+.chat__container__TopDummyDiv {
+  padding-top: 3em;
+}
+
+.chat__container__uProfile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 13px 0px;
 }
 
-.chat__uProfile__bubblePic {
+.chat__container__uProfile__bubblePic {
   width: 3em;
   height: 3em;
   margin: 0em 1em;
@@ -20,17 +26,17 @@
      object-position: center right;
 }
 
-.chat__uProfile__textBox__name {
+.chat__container__uProfile__textBox__name {
   font-weight: 700;
   color: white;
 }
 
-.chat__uProfile__textBox__text {
+.chat__container__uProfile__textBox__text {
   color: white;
   font-weight: 100;
 }
 
-.chat__BotDummyDiv {
-  height: 75px;
+.chat__container__BotDummyDiv {
+  height: 131px;
 }
 /*# sourceMappingURL=chat.css.map */

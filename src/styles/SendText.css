@@ -2,7 +2,7 @@
   position: fixed;
   bottom: -18px;
   height: 130px;
-  width: 100%;
+  width: calc(100% - 181px);
 }
 
 .TextBar__TextContainer {
@@ -14,7 +14,7 @@
 
 .TextBar__TextContainer input[type="text"] {
   height: 50px;
-  width: 85%;
+  width: 77%;
   border-radius: 5px;
   border: none;
 }
