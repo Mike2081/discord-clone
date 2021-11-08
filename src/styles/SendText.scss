@@ -1,7 +1,7 @@
 .TextBar {
   position: fixed;
   bottom: -18px;
-  height: 90px;
+  height: 130px;
   width: 100%;
   &__TextContainer {
     padding: 20px;
@@ -24,6 +24,10 @@
       color: floralwhite;
       font-size: 17px;
       font-weight: 900;
+    }
+    &__warning {
+      font-size: 11px;
+      margin: 11px 0px;
     }
   }
 }

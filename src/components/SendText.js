@@ -30,6 +30,7 @@ function SendText({scroll}) {
           placeholder="Type a message here!"
         />
         <button className ='TextBar__TextContainer__SendBut' type="submit">Send</button>
+        <div className='TextBar__TextContainer__warning' >Be kind :] Swearing/inappropriate messages or spamming with get you permanently banned. </div>
       </form>
     </div>
   );
