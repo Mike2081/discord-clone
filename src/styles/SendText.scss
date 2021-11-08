@@ -2,10 +2,28 @@
   position: fixed;
   bottom: -18px;
   height: 90px;
-  &__InputBar {
+  width: 100%;
+  &__TextContainer {
     padding: 20px;
     border-top: solid;
     border-width: thin;
     background-color: #11173d;
+    input[type="text"] {
+      height: 50px;
+      width: 85%;
+      border-radius: 5px;
+      border: none;
+    }
+    &__SendBut {
+      height: 50px;
+      width: 78px;
+      margin: 0px 0px 0px 10px;
+      border-radius: 5px;
+      border: none;
+      background-color: #ff8c00;
+      color: floralwhite;
+      font-size: 17px;
+      font-weight: 900;
+    }
   }
 }

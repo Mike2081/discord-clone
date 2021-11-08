@@ -1,6 +1,6 @@
 .chat {
-  &__dummyDiv {
-    padding-top: 5em;
+  &__TopDummyDiv {
+    padding-top: 4em;
   }
 
   &__uProfile {
@@ -24,5 +24,8 @@
         font-weight: 100;
       }
     }
+  }
+  &__BotDummyDiv {
+    height: 75px;
   }
 }

@@ -23,13 +23,13 @@ function SendText({scroll}) {
   }
   return (
     <div className='TextBar'>
-      <form className='TextBar__InputBar' onSubmit={sendMsg}>
-        <input
+      <form className='TextBar__TextContainer' onSubmit={sendMsg}>
+        <input type='text'
           value={text}
           onChange={(e) => setText(e.target.value)}
           placeholder="Type a message here!"
         />
-        <button type="submit">Send</button>
+        <button className ='TextBar__TextContainer__SendBut' type="submit">Send</button>
       </form>
     </div>
   );

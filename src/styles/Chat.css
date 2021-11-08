@@ -1,5 +1,5 @@
-.chat__dummyDiv {
-  padding-top: 5em;
+.chat__TopDummyDiv {
+  padding-top: 4em;
 }
 
 .chat__uProfile {
@@ -28,5 +28,9 @@
 .chat__uProfile__textBox__text {
   color: white;
   font-weight: 100;
+}
+
+.chat__BotDummyDiv {
+  height: 75px;
 }
 /*# sourceMappingURL=chat.css.map */

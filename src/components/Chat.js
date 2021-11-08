@@ -13,7 +13,7 @@ function Chat() {
     dataBase
       .collection("msgs")
       .orderBy("createdAt")
-      .limit(15)
+      .limit(100)
       .onSnapshot((snapshot) => {
         setMsgs(snapshot.docs.map((doc) => doc.data()));
       });
@@ -22,7 +22,7 @@ function Chat() {
   return (
     <div className ='chat'>
       <NavBar />
-      <div className='chat__dummyDiv'></div>
+      <div className='chat__TopDummyDiv'></div>
       {msgs.map(({ id, text, photoURL, displayName }) => (
         <div className='chat__uProfile' key={id}>
           <img className='chat__uProfile__bubblePic' src={photoURL} alt="profile pic" />
@@ -33,7 +33,7 @@ function Chat() {
         </div>
       ))}
       <SendText scroll={scroll} />
-      <div ref={scroll}></div>
+      <div className='chat__BotDummyDiv' ref={scroll}>dummy text</div>
     </div>
   );
 }
