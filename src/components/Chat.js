@@ -22,29 +22,30 @@ function Chat() {
   return (
     <div className="chat">
       <div className="chat__container">
+        {/* <div className="chat__container__dummySide">test dummy sidebar</div> */}
         <SideBar />
-        <div>
+        <div className="chat__container__box">
           <NavBar />
-          <div className="chat__container__TopDummyDiv"></div>
+          <div className="chat__container__box__TopDummyDiv"></div>
           {msgs.map(({ id, text, photoURL, displayName }) => (
-            <div className="chat__container__uProfile" key={id}>
+            <div className="chat__container__box__uProfile" key={id}>
               <img
-                className="chat__container__uProfile__bubblePic"
+                className="chat__container__box__uProfile__bubblePic"
                 src={photoURL}
                 alt="profile pic"
               />
-              <div className="chat__container__uProfile__textBox">
-                <div className="chat__container__uProfile__textBox__name">
+              <div className="chat__container__box__uProfile__textBox">
+                <div className="chat__container__box__uProfile__textBox__name">
                   {displayName}
                 </div>
-                <div className="chat__container__uProfile__textBox__text">
+                <div className="chat__container__box__uProfile__textBox__text">
                   {text}
                 </div>
               </div>
             </div>
           ))}
           <SendText scroll={scroll} />
-          <div className="chat__container__BotDummyDiv" ref={scroll}></div>
+          <div className="chat__container__box__BotDummyDiv" ref={scroll}></div>
         </div>
       </div>
     </div>

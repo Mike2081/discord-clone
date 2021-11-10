@@ -1,7 +1,32 @@
 .SideBar {
   background: #0d1130;
   text-align: center;
+  position: fixed;
+  height: 100%;
   &__ProPic {
-    height: 174px;
+    height: 135px;
+    margin: 23px;
+    border-radius: 128%;
+  }
+  &__Heading {
+    font-size: 128%;
+    font-weight: 700;
+    color: white;
+    margin: 14px 0px 7px 0px;
+  }
+  &__subHead {
+    font-size: 10px;
+  }
+  &__logos {
+    margin: 20px 0px;
+    &__icons {
+      height: 40px;
+      margin: 0px -7px;
+    }
+  }
+  &__user {
+    font-size: 14px;
+    color: white;
+    font-weight: 700;
   }
 }

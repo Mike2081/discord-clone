@@ -1,34 +1,39 @@
 .chat {
   &__container {
     display: flex;
-    &__TopDummyDiv {
-      padding-top: 3em;
-    }
-
-    &__uProfile {
-      display: flex;
-      margin: 13px 0px;
-      &__bubblePic {
-        width: 3em;
-        height: 3em;
-        margin: 0em 1em;
-        border-radius: 50%;
-        object-fit: cover;
-        object-position: center right;
+    &__box {
+      margin-left: 181px;
+      &__dummySide {
+        width: 225%;
       }
-      &__textBox {
-        &__name {
-          font-weight: 700;
-          color: white;
+      &__TopDummyDiv {
+        padding-top: 3em;
+      }
+      &__uProfile {
+        display: flex;
+        margin: 13px 0px;
+        &__bubblePic {
+          width: 3em;
+          height: 3em;
+          margin: 0em 1em;
+          border-radius: 50%;
+          object-fit: cover;
+          object-position: center right;
         }
-        &__text {
-          color: white;
-          font-weight: 100;
+        &__textBox {
+          &__name {
+            font-weight: 700;
+            color: white;
+          }
+          &__text {
+            color: white;
+            font-weight: 100;
+          }
         }
       }
-    }
-    &__BotDummyDiv {
-      height: 131px;
+      &__BotDummyDiv {
+        height: 131px;
+      }
     }
   }
 }

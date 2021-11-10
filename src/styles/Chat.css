@@ -4,18 +4,26 @@
   display: flex;
 }
 
-.chat__container__TopDummyDiv {
+.chat__container__box {
+  margin-left: 181px;
+}
+
+.chat__container__box__dummySide {
+  width: 225%;
+}
+
+.chat__container__box__TopDummyDiv {
   padding-top: 3em;
 }
 
-.chat__container__uProfile {
+.chat__container__box__uProfile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 13px 0px;
 }
 
-.chat__container__uProfile__bubblePic {
+.chat__container__box__uProfile__bubblePic {
   width: 3em;
   height: 3em;
   margin: 0em 1em;
@@ -26,17 +34,17 @@
      object-position: center right;
 }
 
-.chat__container__uProfile__textBox__name {
+.chat__container__box__uProfile__textBox__name {
   font-weight: 700;
   color: white;
 }
 
-.chat__container__uProfile__textBox__text {
+.chat__container__box__uProfile__textBox__text {
   color: white;
   font-weight: 100;
 }
 
-.chat__container__BotDummyDiv {
+.chat__container__box__BotDummyDiv {
   height: 131px;
 }
 /*# sourceMappingURL=chat.css.map */
