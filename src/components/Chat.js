@@ -7,29 +7,17 @@ import SideBar from "./SideBar";
 
 function Chat() {
   const scroll = useRef();
-  const pagescroll = useRef();
   const [msgs, setMsgs] = useState([]);
   
-  function refreshScroll() {
-    pagescroll.current.scrollIntoView({
-      behavior: "smooth"});
-  };
-
   useEffect(() => {
     dataBase
-      .collection("msgs")
-      .orderBy("createdAt")
-      .limit(100)
-      .onSnapshot((snapshot) => {
-        setMsgs(snapshot.docs.map((doc) => doc.data()));
-      });
+    .collection("msgs")
+    .orderBy("createdAt")
+    .limit(100)
+    .onSnapshot((snapshot) => {
+      setMsgs(snapshot.docs.map((doc) => doc.data()));
+    });
   }, []);
-
-  useEffect(() => {
-    if (window.performance) {
-      refreshScroll();
-    }
-  }, [pagescroll]);
 
   return (
     <div className="chat">
@@ -55,8 +43,8 @@ function Chat() {
               </div>
             </div>
           ))}
-          <SendText scroll={scroll} ref={pagescroll} />
-          <div className="chat__container__box__BotDummyDiv" ref={scroll}></div>
+          <SendText scroll={scroll}  />
+          <div className="chat__container__box__BotDummyDiv" ref={scroll} ></div>
         </div>
       </div>
     </div>
