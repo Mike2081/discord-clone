@@ -8,19 +8,24 @@ import SideBar from "./SideBar";
 function Chat() {
   const scroll = useRef();
   const [msgs, setMsgs] = useState([]);
-  
+
+  const scrollToBottom = () => {
+    scroll.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   useEffect(() => {
+    scrollToBottom();
     dataBase
-    .collection("msgs")
-    .orderBy("createdAt")
-    .limit(100)
-    .onSnapshot((snapshot) => {
-      setMsgs(snapshot.docs.map((doc) => doc.data()));
-    });
+      .collection("msgs")
+      .orderBy("createdAt")
+      .limit(100)
+      .onSnapshot((snapshot) => {
+        setMsgs(snapshot.docs.map((doc) => doc.data()));
+      });
   }, []);
 
   return (
-    <div className="chat">
+    <div className="chat" ref={scrollToBottom}>
       <div className="chat__container">
         <SideBar />
         <div className="chat__container__box">
@@ -43,8 +48,8 @@ function Chat() {
               </div>
             </div>
           ))}
-          <SendText scroll={scroll}  />
-          <div className="chat__container__box__BotDummyDiv" ref={scroll} ></div>
+          <SendText scroll={scroll} />
+          <div className="chat__container__box__BotDummyDiv" ref={scroll}></div>
         </div>
       </div>
     </div>
