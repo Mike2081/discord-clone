@@ -3,10 +3,33 @@
   text-align: center;
   position: fixed;
   height: 100%;
-  &__ProPic {
-    height: 135px;
-    margin: 23px;
-    border-radius: 128%;
+  &__devsTitle {
+    font-weight: 800;
+    font-size: 15px;
+    color: blueviolet;
+    margin: 14px 0px;
+  }
+  &__devsBox {
+    justify-content: space-evenly;
+    border-width: thin;
+    border: solid white;
+    &__ProPic {
+      height: 78px;
+      margin: 3px;
+      border-radius: 50%;
+    }
+  }
+  &__devNames {
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 900;
+    color: blueviolet;
+    &__michael {
+      margin: 0px 0px 0px -13px;
+    }
+    &__vato {
+      margin-left: 8px;
+    }
   }
   &__Heading {
     font-size: 128%;

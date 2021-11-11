@@ -5,7 +5,7 @@ function NavBar() {
     return (
         <div className ='Nav'>
             <div className='Nav__title'>
-                Welcome to Michael's Discord-clone community chat
+                Welcome to Michael/Vato's community chat
             </div>
         </div>
     )
