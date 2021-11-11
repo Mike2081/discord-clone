@@ -7,7 +7,13 @@ import SideBar from "./SideBar";
 
 function Chat() {
   const scroll = useRef();
+  const pagescroll = useRef();
   const [msgs, setMsgs] = useState([]);
+  
+  function refreshScroll() {
+    pagescroll.current.scrollIntoView({
+      behavior: "smooth"});
+  };
 
   useEffect(() => {
     dataBase
@@ -19,10 +25,15 @@ function Chat() {
       });
   }, []);
 
+  useEffect(() => {
+    if (window.performance) {
+      refreshScroll();
+    }
+  }, [pagescroll]);
+
   return (
     <div className="chat">
       <div className="chat__container">
-        {/* <div className="chat__container__dummySide">test dummy sidebar</div> */}
         <SideBar />
         <div className="chat__container__box">
           <NavBar />
@@ -44,7 +55,7 @@ function Chat() {
               </div>
             </div>
           ))}
-          <SendText scroll={scroll} />
+          <SendText scroll={scroll} ref={pagescroll} />
           <div className="chat__container__box__BotDummyDiv" ref={scroll}></div>
         </div>
       </div>
