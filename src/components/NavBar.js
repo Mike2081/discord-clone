@@ -10,7 +10,7 @@ function NavBar() {
       <button className="Nav__button">
         <div>scroll to bottom</div>
         <div className="Nav__button__holder">
-          <div className="Nav__button__holder" >Mark As Read</div>
+          <div className="Nav__button__holder__mark" >Mark As Read</div>
           <img className="Nav__button__holder__bubble" src="../images/text-bubble.png" alt=""/>
         </div>
       </button>
