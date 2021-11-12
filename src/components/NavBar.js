@@ -1,14 +1,14 @@
-import React from 'react'
-import '../styles/NavBar.css'
+import React from "react";
+import "../styles/NavBar.css";
 
 function NavBar() {
-    return (
-        <div className ='Nav'>
-            <div className='Nav__title'>
-                Welcome to Michael/Vato's community chat
-            </div>
-        </div>
-    )
+  return (
+    <div className="Nav">
+      <div className="Nav__title">
+        Welcome to Michael and Ted's community chat
+      </div>
+    </div>
+  );
 }
 
-export default NavBar
+export default NavBar;
