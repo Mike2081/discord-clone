@@ -14,7 +14,6 @@ function Chat() {
   };
 
   useEffect(() => {
-    scrollToBottom();
     dataBase
       .collection("msgs")
       .orderBy("createdAt")

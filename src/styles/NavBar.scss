@@ -14,4 +14,25 @@
     font-weight: 700;
     color: white;
   }
+  &__button {
+    position: fixed;
+    border-radius: 0px 0px 7px 7px;
+    margin: 5px;
+    border: none;
+    background-color: #5865f2;
+    color: white;
+    width: calc(100% - 193px);
+    text-align: inherit;
+    display: flex;
+    justify-content: space-between;
+    &__holder {
+      display: flex;
+      &__mark {
+        margin-right: 8px;
+      }
+      &__bubble {
+        height: 15px;
+      }
+    }
+  }
 }
