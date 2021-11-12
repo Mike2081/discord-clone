@@ -1,0 +1,38 @@
+.logout-button {
+  border-style: none;
+  font-size: 0.85rem;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.logoutModal {
+  padding: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background-color: #0d1130;
+  text-align: center;
+
+  &__title {
+    color: #ffffff;
+  }
+
+  &__button {
+    padding: 0.5rem;
+    border-style: none;
+    background-color: #9cb3fc;
+  }
+
+  &__button + &__button {
+    margin-left: 1rem;
+  }
+}
