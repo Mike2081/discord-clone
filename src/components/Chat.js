@@ -31,7 +31,7 @@ function Chat() {
         <div className="chat__container__box">
           <NavBar />
           <div className="chat__container__box__TopDummyDiv"></div>
-          {msgs.map(({ id, text, photoURL, displayName }) => (
+          {msgs.map(({ id, text, photoURL, displayName, createdAt }) => (
             <div className="chat__container__box__uProfile" key={id}>
               <img
                 className="chat__container__box__uProfile__bubblePic"
@@ -39,8 +39,13 @@ function Chat() {
                 alt="profile pic"
               />
               <div className="chat__container__box__uProfile__textBox">
-                <div className="chat__container__box__uProfile__textBox__name">
-                  {displayName}
+                <div className="chat__container__box__uProfile__textBox__wrap">
+                  <div className="chat__container__box__uProfile__textBox__wrap__name">
+                    {displayName}
+                  </div>
+                  <div className="chat__container__box__uProfile__textBox__wrap__time">
+                    {new Date(createdAt?.toDate()).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}
+                  </div>
                 </div>
                 <div className="chat__container__box__uProfile__textBox__text">
                   {text}

@@ -21,9 +21,17 @@
           object-position: center right;
         }
         &__textBox {
-          &__name {
-            font-weight: 700;
-            color: white;
+          &__wrap {
+            display: flex;
+            &__name {
+              font-weight: 700;
+              color: white;
+              margin-right: 10px;
+            }
+            &__time {
+              font-size: 11px;
+              font-weight: 600;
+            }
           }
           &__text {
             color: white;

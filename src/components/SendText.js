@@ -9,7 +9,7 @@ function SendText({scroll}) {
 
   async function sendMsg(e) {
     e.preventDefault();
-    const { uid, photoURL, displayName } = auth.currentUser;
+    const { uid, photoURL, displayName, } = auth.currentUser;
 
     await dataBase.collection("msgs").add({
       text: text,
