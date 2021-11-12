@@ -1,10 +1,15 @@
 .logout-button {
-  border-style: none;
-  font-size: 0.85rem;
-  background-color: transparent;
-  color: #ffffff;
   cursor: pointer;
-
+  height: 24px;
+  width: 78px;
+  margin: 5px 0px 0px 0px;
+  border-radius: 7px;
+  border: none;
+  background-color: blueviolet;
+  color: floralwhite;
+  font-size: 15px;
+  font-weight: bold;
+  font-weight: bold;
   &:hover {
     text-decoration: underline;
   }
