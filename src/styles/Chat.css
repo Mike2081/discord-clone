@@ -43,6 +43,15 @@
   padding-top: 3em;
 }
 
+.chat__container__box__LoadMsgs {
+  margin: 15px 0px 0px 19px;
+  background-color: #11173d;
+  border: none;
+  color: #7a7d92;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
 .chat__container__box__uProfile {
   display: -webkit-box;
   display: -ms-flexbox;

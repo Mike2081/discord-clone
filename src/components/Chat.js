@@ -8,10 +8,14 @@ import SideBar from "./SideBar";
 function Chat() {
   const scroll = useRef();
   const [msgs, setMsgs] = useState([]);
-  // const [limitMessages, setLimitMessages] = useState(0)
+  const [limitMessages, setLimitMessages] = useState(10)
 
   const scrollToBottom = () => {
     scroll.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const loadMore = () => {
+    setLimitMessages(limitMessages + 10)
   };
 
   useEffect(() => {
@@ -24,7 +28,7 @@ function Chat() {
   }, []);
 
   return (
-    <div className="chat" ref={scrollToBottom}>
+    <div className="chat" >
       <div className="chat__container">
         <SideBar />
         <div className="chat__container__box">
@@ -37,7 +41,8 @@ function Chat() {
             </div>
           </button>
           <div className="chat__container__box__TopDummyDiv"></div>
-          {msgs.slice((msgs.length - 10),msgs.length).map(({ id, text, photoURL, displayName, createdAt }) => (
+          <button className="chat__container__box__LoadMsgs" onClick={loadMore} >Load More Messages...</button>
+          {msgs.slice((msgs.length - limitMessages),msgs.length).map(({ id, text, photoURL, displayName, createdAt }) => (
             <div className="chat__container__box__uProfile" key={id}>
               <img
                 className="chat__container__box__uProfile__bubblePic"
