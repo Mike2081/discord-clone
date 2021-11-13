@@ -29,6 +29,13 @@ function Chat() {
         <SideBar />
         <div className="chat__container__box">
           <NavBar />
+          <button className="chat__container__box__button" onClick={scrollToBottom}>
+            <div>scroll to new message</div>
+            <div className="chat__container__box__button__holder">
+              <div className="chat__container__box__button__holder__mark" >Mark As Read</div>
+              <img className="chat__container__box__button__holder__bubble" src="../images/text-bubble.png" alt=""/>
+            </div>
+          </button>
           <div className="chat__container__box__TopDummyDiv"></div>
           {msgs.map(({ id, text, photoURL, displayName, createdAt }) => (
             <div className="chat__container__box__uProfile" key={id}>

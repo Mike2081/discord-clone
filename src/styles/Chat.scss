@@ -3,8 +3,26 @@
     display: flex;
     &__box {
       margin-left: 181px;
-      &__dummySide {
-        width: 225%;
+      &__button {
+        position: fixed;
+        border-radius: 0px 0px 7px 7px;
+        margin: 40px 0px 0px 6px;
+        border: none;
+        background-color: #5865f2;
+        color: white;
+        width: calc(100% - 193px);
+        text-align: inherit;
+        display: flex;
+        justify-content: space-between;
+        &__holder {
+          display: flex;
+          &__mark {
+            margin-right: 8px;
+          }
+          &__bubble {
+            height: 15px;
+          }
+        }
       }
       &__TopDummyDiv {
         padding-top: 3em;

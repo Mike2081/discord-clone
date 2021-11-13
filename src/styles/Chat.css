@@ -8,8 +8,35 @@
   margin-left: 181px;
 }
 
-.chat__container__box__dummySide {
-  width: 225%;
+.chat__container__box__button {
+  position: fixed;
+  border-radius: 0px 0px 7px 7px;
+  margin: 40px 0px 0px 6px;
+  border: none;
+  background-color: #5865f2;
+  color: white;
+  width: calc(100% - 193px);
+  text-align: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.chat__container__box__button__holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.chat__container__box__button__holder__mark {
+  margin-right: 8px;
+}
+
+.chat__container__box__button__holder__bubble {
+  height: 15px;
 }
 
 .chat__container__box__TopDummyDiv {

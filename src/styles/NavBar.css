@@ -15,35 +15,4 @@
   font-weight: 700;
   color: white;
 }
-
-.Nav__button {
-  position: fixed;
-  border-radius: 0px 0px 7px 7px;
-  margin: 5px;
-  border: none;
-  background-color: #5865f2;
-  color: white;
-  width: calc(100% - 193px);
-  text-align: inherit;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.Nav__button__holder {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.Nav__button__holder__mark {
-  margin-right: 8px;
-}
-
-.Nav__button__holder__bubble {
-  height: 15px;
-}
 /*# sourceMappingURL=NavBar.css.map */
