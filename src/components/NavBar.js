@@ -1,19 +1,26 @@
-import React from "react";
 import "../styles/NavBar.css";
+import React, { useState, useEffect, } from "react";
+import { dataBase } from "./firebase";
+
 
 function NavBar() {
+  const [msgs, setMsgs] = useState([]);
+
+  useEffect(() => {
+     dataBase
+       .collection("msgs")
+       .orderBy("createdAt")
+       .onSnapshot((snapshot) => {
+         setMsgs(snapshot.docs.map((doc) => doc.data()));
+       });
+   }, []);
+
   return (
     <div className="Nav">
       <div className="Nav__title">
         Welcome to Michael and Ted's community chat
       </div>
-      {/* <button className="Nav__button">
-        <div>scroll to new message</div>
-        <div className="Nav__button__holder">
-          <div className="Nav__button__holder__mark" >Mark As Read</div>
-          <img className="Nav__button__holder__bubble" src="../images/text-bubble.png" alt=""/>
-        </div>
-      </button> */}
+      <div className="Nav__chat">Total Chat Messages: {msgs.length}</div>
     </div>
   );
 }

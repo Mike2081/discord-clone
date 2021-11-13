@@ -6,6 +6,7 @@ import Footer from "./Footer.js";
 function SignIn() {
   function signInWithGoogle() {
     const provider = new firebase.auth.GoogleAuthProvider();
+    
     auth.signInWithPopup(provider).catch(function (e) {
       if (e.code === "auth/popup-blocked") {
         auth.signInWithRedirect(provider);

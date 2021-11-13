@@ -19,7 +19,7 @@ function SendText({scroll}) {
       createdAt: firebase.firestore.FieldValue.serverTimestamp(),
     });
     setText("");
-    scroll.current.scrollIntoView({ behavior: 'smooth'})
+    scroll.current.scrollIntoView({ behavior: 'smooth'});
   }
   return (
     <div className='TextBar'>
