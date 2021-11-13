@@ -8,6 +8,7 @@ import SideBar from "./SideBar";
 function Chat() {
   const scroll = useRef();
   const [msgs, setMsgs] = useState([]);
+  // const [limitMessages, setLimitMessages] = useState(0)
 
   const scrollToBottom = () => {
     scroll.current?.scrollIntoView({ behavior: "smooth" });
@@ -17,7 +18,6 @@ function Chat() {
     dataBase
       .collection("msgs")
       .orderBy("createdAt")
-      .limit(100)
       .onSnapshot((snapshot) => {
         setMsgs(snapshot.docs.map((doc) => doc.data()));
       });
@@ -37,7 +37,7 @@ function Chat() {
             </div>
           </button>
           <div className="chat__container__box__TopDummyDiv"></div>
-          {msgs.map(({ id, text, photoURL, displayName, createdAt }) => (
+          {msgs.slice((msgs.length - 10),msgs.length).map(({ id, text, photoURL, displayName, createdAt }) => (
             <div className="chat__container__box__uProfile" key={id}>
               <img
                 className="chat__container__box__uProfile__bubblePic"
@@ -50,7 +50,7 @@ function Chat() {
                     {displayName}
                   </div>
                   <div className="chat__container__box__uProfile__textBox__wrap__time">
-                    {new Date(createdAt?.toDate()).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}
+                    {new Date(createdAt?.toDate()).toLocaleString().replace(/(.*)\D\d+/, '$1')}
                   </div>
                 </div>
                 <div className="chat__container__box__uProfile__textBox__text">
