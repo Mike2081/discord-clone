@@ -9,10 +9,9 @@ function SideBar(props) {
   return (
     <div className="SideBar">
       <div className="SideBar__projectInfo">
-        <h1 className="SideBar__project_name">MintCord</h1>
+        <h1 className="SideBar__project_name">DoHoCord</h1>
         <p className="SideBar__project__desc">Kinda like discord, but janky</p>
       </div>
-      <h2 className="SideBar__devsTitle">Project Developers</h2>
       <div className="SideBar__devs">
         <div className="SideBar__logos">
           <img
@@ -20,8 +19,7 @@ function SideBar(props) {
             src="../images/profile.jpg"
             alt="computer cartoon guy"
           />
-
-          <div>Michael</div>
+          <div>Michael DoHo</div>
           <a
             href="https://www.instagram.com/doh0/"
             target="_blank"
@@ -55,37 +53,7 @@ function SideBar(props) {
               alt="instagram logo"
             />
           </a>
-        </div>
-        <div className="SideBar__logos">
-          <img
-            className="SideBar__devsBox__ProPic"
-            src="../images/ted.jpg"
-            alt="my ugly face"
-          />
-          <div>Ted</div>
-          <a
-            href="https://github.com/ted-dino"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              className="SideBar__logos__icons"
-              src="../images/GitHub.svg"
-              alt="instagram logo"
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/ted-dino-967305222/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              className="SideBar__logos__icons"
-              src="../images/LinkedIn.svg"
-              alt="instagram logo"
-            />
-          </a>
-        </div>
+        </div>      
       </div>
 
       <div>Signed in as:</div>

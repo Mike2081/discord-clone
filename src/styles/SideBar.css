@@ -19,6 +19,8 @@
 
 .SideBar__project_name {
   margin-bottom: 0;
+  color: #5865f2;
+  text-decoration: underline;
 }
 
 .SideBar__project__desc {
@@ -90,7 +92,7 @@
 }
 
 .SideBar__logos {
-  margin: 20px 0px;
+  margin: 20px 94px;
 }
 
 .SideBar__logos__icons {
