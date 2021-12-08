@@ -1,25 +1,9 @@
 .SideBar {
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  padding: 1em;
   background: #0d1130;
   text-align: center;
-  &__project_name {
-    margin-bottom: 0;
-    color: #5865f2;
-    text-decoration: underline;
-  }
-  &__project__desc {
-    margin-top: 0;
-  }
-  &__devs {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    max-width: 320px;
-  }
+  position: fixed;
+  height: 100%;
   &__devsTitle {
     font-weight: 800;
     font-size: 14.7px;
@@ -59,7 +43,7 @@
     font-size: 10px;
   }
   &__logos {
-    margin: 20px 94px;
+    margin: 20px 0px;
     &__icons {
       height: 40px;
       margin: 0px -7px;
@@ -69,12 +53,5 @@
     font-size: 14px;
     color: white;
     font-weight: 700;
-  }
-  @media (min-width: 1024px) {
-    position: fixed;
-    height: 100%;
-    &__devs {
-      flex-direction: column;
-    }
   }
 }

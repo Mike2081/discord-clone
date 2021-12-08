@@ -1,9 +1,8 @@
 .chat {
   &__container {
     display: flex;
-    flex-direction: column;
     &__box {
-      margin-left: 0;
+      margin-left: 181px;
       &__button {
         position: fixed;
         border-radius: 0px 0px 7px 7px;
@@ -66,15 +65,7 @@
         }
       }
       &__BotDummyDiv {
-        height: 5rem;
-      }
-    }
-  }
-  @media (min-width: 1024px) {
-    &__container {
-      flex-direction: row;
-      &__box {
-        margin-left: 16.25rem;
+        height: 131px;
       }
     }
   }
