@@ -3,6 +3,10 @@
   bottom: -18px;
   height: 130px;
   width: calc(100% - 181px);
+  z-index: 2;
+  @media (max-width: 618px) {
+    width: calc(100% - 0px);
+  }
   &__TextContainer {
     padding: 20px;
     border-top: solid;
@@ -13,6 +17,9 @@
       width: 77%;
       border-radius: 5px;
       border: none;
+      @media (max-width: 422px) {
+        width: 55%;
+      }
     }
     &__SendBut {
       height: 50px;

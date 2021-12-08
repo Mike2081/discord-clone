@@ -3,6 +3,13 @@
   bottom: -18px;
   height: 130px;
   width: calc(100% - 181px);
+  z-index: 2;
+}
+
+@media (max-width: 618px) {
+  .TextBar {
+    width: calc(100% - 0px);
+  }
 }
 
 .TextBar__TextContainer {
@@ -17,6 +24,12 @@
   width: 77%;
   border-radius: 5px;
   border: none;
+}
+
+@media (max-width: 422px) {
+  .TextBar__TextContainer input[type="text"] {
+    width: 55%;
+  }
 }
 
 .TextBar__TextContainer__SendBut {

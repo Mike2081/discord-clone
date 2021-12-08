@@ -6,6 +6,12 @@
   height: 100%;
 }
 
+@media (max-width: 618px) {
+  .SideBar {
+    position: static;
+  }
+}
+
 .SideBar__devsTitle {
   font-weight: 800;
   font-size: 14.7px;
@@ -56,7 +62,7 @@
 }
 
 .SideBar__subHead {
-  font-size: 10px;
+  font-size: 8.2px;
 }
 
 .SideBar__logos {

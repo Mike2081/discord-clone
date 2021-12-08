@@ -1,8 +1,14 @@
 .chat {
   &__container {
     display: flex;
+    @media (max-width: 618px) {
+      display: block;
+    }
     &__box {
       margin-left: 181px;
+      @media (max-width: 618px) {
+        margin-left: 0px;
+      }
       &__button {
         position: fixed;
         border-radius: 0px 0px 7px 7px;
@@ -11,9 +17,14 @@
         background-color: #5865f2;
         color: white;
         width: calc(100% - 193px);
-        text-align: inherit;
         display: flex;
         justify-content: space-between;
+        @media (max-width: 618px) {
+          position: relative;
+          margin: 0px 0px 0px 6px;
+          width: calc(100% - 16px);
+          z-index: 1;
+        }
         &__holder {
           display: flex;
           &__mark {
@@ -26,13 +37,19 @@
       }
       &__TopDummyDiv {
         padding-top: 3em;
+        @media (max-width: 618px) {
+          padding-top: 1em;
+        }
       }
       &__LoadMsgs {
-        margin: 15px 0px 0px 19px;
+        margin: 29px 0px 0px 19px;
         background-color: #11173d;
         border: none;
         color: #7a7d92;
         text-decoration-line: underline;
+        @media (max-width: 618px) {
+          margin: 0px 0px 0px 19px;
+        }
       }
       &__uProfile {
         display: flex;

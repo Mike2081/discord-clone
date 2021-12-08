@@ -4,8 +4,20 @@
   display: flex;
 }
 
+@media (max-width: 618px) {
+  .chat__container {
+    display: block;
+  }
+}
+
 .chat__container__box {
   margin-left: 181px;
+}
+
+@media (max-width: 618px) {
+  .chat__container__box {
+    margin-left: 0px;
+  }
 }
 
 .chat__container__box__button {
@@ -16,13 +28,21 @@
   background-color: #5865f2;
   color: white;
   width: calc(100% - 193px);
-  text-align: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 618px) {
+  .chat__container__box__button {
+    position: relative;
+    margin: 0px 0px 0px 6px;
+    width: calc(100% - 16px);
+    z-index: 1;
+  }
 }
 
 .chat__container__box__button__holder {
@@ -43,13 +63,25 @@
   padding-top: 3em;
 }
 
+@media (max-width: 618px) {
+  .chat__container__box__TopDummyDiv {
+    padding-top: 1em;
+  }
+}
+
 .chat__container__box__LoadMsgs {
-  margin: 15px 0px 0px 19px;
+  margin: 29px 0px 0px 19px;
   background-color: #11173d;
   border: none;
   color: #7a7d92;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+}
+
+@media (max-width: 618px) {
+  .chat__container__box__LoadMsgs {
+    margin: 0px 0px 0px 19px;
+  }
 }
 
 .chat__container__box__uProfile {

@@ -37,7 +37,8 @@
 .logoutModal__button {
   padding: 0.5rem;
   border-style: none;
-  background-color: #9cb3fc;
+  background-color: #5865f2;
+  color: white;
 }
 
 .logoutModal__button + .logoutModal__button {

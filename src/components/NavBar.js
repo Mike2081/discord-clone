@@ -18,7 +18,7 @@ function NavBar() {
   return (
     <div className="Nav">
       <div className="Nav__title">
-        Welcome to Michael and Ted's community chat
+        Welcome to Michael's community chat
       </div>
       <div className="Nav__chat">Total Chat Messages: {msgs.length}</div>
     </div>
