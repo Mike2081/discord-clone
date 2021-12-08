@@ -44,4 +44,8 @@
 .logoutModal__button + .logoutModal__button {
   margin-left: 1rem;
 }
+
+.ReactModal__Overlay--after-open {
+  z-index: 3;
+}
 /*# sourceMappingURL=LogOut.css.map */
