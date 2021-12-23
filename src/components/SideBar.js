@@ -27,17 +27,6 @@ function SideBar() {
         />
 
         <div>Michael</div>
-        <a
-          href="https://www.instagram.com/doh0/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            className="SideBar__logos__icons"
-            src="../images/Instagram.svg"
-            alt="instagram logo"
-          />
-        </a>
         <a href="https://github.com/Mike2081" target="_blank" rel="noreferrer">
           <img
             className="SideBar__logos__icons"
